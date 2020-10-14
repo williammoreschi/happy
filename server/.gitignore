@@ -1,0 +1,8 @@
+node_modules
+coverage
+dist
+.env
+yarn-error.log
+uploads/*
+!uploads/.gitkeep
+ormconfig.json
