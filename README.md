@@ -73,7 +73,48 @@ Caso você tenha uma conta no [mapbox](https://www.mapbox.com/), pode usar seu t
 Se você não quiser ter este trabalho, sem problemas, por padrão já tem um mapa configurado para uso.
 
 ### Rodando o Happy Servidor.
-> Em breve mais detalhes...
+Entre na pasta
+
+```bash
+
+$ cd server
+
+```
+Instale as dependências
+
+```bash
+
+$ yarn
+
+# ou, caso use npm
+
+$ npm install
+
+```
+Rode as migrations
+
+```bash
+
+$ yarn typeorm migration:run
+
+# ou, caso use npm
+
+$ npm typeorm migration:run
+
+```
+Rode a aplicação
+
+```bash
+
+$ yarn dev:server
+
+# ou, caso use npm
+
+$ npm dev:server
+
+```
+
+Use o [insomnia](https://insomnia.rest/) ou [postman](https://www.postman.com/) para acessar as rotas da api, importe o arquivo *rotas.json* o arquivo esta dentro da pasta server.
 
 ### Rodando o Happy Mobile.
 > Em breve mais detalhes...
